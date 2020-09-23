@@ -1,0 +1,28 @@
+﻿<Window x:Class="SoundCloudClient.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SoundCloudClient"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="400" Width="500" WindowStyle="None" ResizeMode="NoResize">
+    <Grid Width="500" Height="400">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="122*"/>
+            <RowDefinition Height="217*"/>
+            <RowDefinition Height="111*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="140*"/>
+            <ColumnDefinition Width="210*"/>
+            <ColumnDefinition Width="140*"/>
+        </Grid.ColumnDefinitions>
+        <Label Width="120" Height="30" Grid.Column="0" Margin="22,68,1,95" Grid.Row="1">Enter your e-mail</Label>
+        <Label Width="120" Height="30" Grid.Column="0" Margin="22,140,1,23" Grid.Row="1">Enter your password</Label>
+        <TextBox x:Name="LoginTextBox" Text="{Binding Login, UpdateSourceTrigger=PropertyChanged}" Width="180" Height="30" Grid.Column="1" Margin="0,58,1,105" Grid.Row="1" HorizontalAlignment="Right" CaretBrush="#FFF75C0E" SelectionBrush="#FFF75C0E" Foreground="#FFF75C0E"></TextBox>
+        <TextBox x:Name="PasswordTextBox" Text="{Binding Password, UpdateSourceTrigger=PropertyChanged}" Width="180" Height="30" Grid.Column="1" Margin="0,128,1,35" Grid.Row="1" HorizontalAlignment="Right" CaretBrush="#FFF75C0E" SelectionBrush="#FFF75C0E" Foreground="#FFF75C0E"></TextBox>
+        <Button x:Name="LoginButton" Command="{Binding AddCommand}"  Margin="0,34,28,35" Grid.Row="2" Grid.Column="2" Width="110" Height="30" RenderTransformOrigin="-0.777,0.496" HorizontalAlignment="Right" Background="#FFF75C0E" BorderBrush="#FFB77E3A">Login</Button>
+        <Image Source="sound-cloud-logotype.png" RenderTransformOrigin="1.233,0.639" Grid.Column="1" Margin="36,14,35,0"/>
+        <Image MouseDown="Image_MouseDown" Source="close-window-32.png" Height="32" Width="32" RenderTransformOrigin="8.552,0.732" Grid.Column="2" Margin="83,10,28,66" />
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+﻿<Window x:Class="SoundCloudClient.ErrorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SoundCloudClient"
+        mc:Ignorable="d"
+        Title="ErrorWindow" Height="188.664" Width="600" ResizeMode="NoResize" WindowStyle="None">
+    <Grid>
+        <Image MouseDown="Image_MouseDown" Height="32" Width="32" Source="close-window-32.png" Margin="546,10,22,147"></Image>
+        <TextBlock Foreground="#FFF75C0E" FontSize="25" FontFamily="Segoe Print" Margin="10,60,10,0" Height="117" VerticalAlignment="Top">Please, enter your credentials in special fields</TextBlock>
+        <Button FontSize="18" Height="Auto" Margin="471,132,21,12" RenderTransformOrigin="0.47,1.214" Background="#FFF75C0E" BorderBrush="#FFF75C0E" Click="Button_Click">Close</Button>
+    </Grid>
+</Window>
